@@ -24,6 +24,10 @@ Route::get('/', function () {
 Route::get('/event-details', function () {
     return view('landing.event-details');
 })->name('event-details');
+Route::get('/events-list', function () {
+    return view('landing.events-list');
+})->name('events-list');
+
 Route::get('/lsidebar', function () {
     return view('landing.left-sidebar');
 })->name('leftSidebar');
