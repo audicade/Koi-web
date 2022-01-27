@@ -25,7 +25,7 @@
 
 								<!-- Feature -->
 									<section>
-										<a href="#" class="image featured"><img src="{{ asset('/') }}images/pic02.jpg" alt="" /></a>
+										<a href="{{route('events-list')}}" class="image featured"><img src="{{ asset('/') }}images/pic02.jpg" alt="" /></a>
 										<header>
 											<h3>Events List</h3>
 										</header>
@@ -73,13 +73,14 @@
 							<!-- Content -->
 								<div id="content" class="col-8 col-12-medium">
 									<!-- Post -->
+                                    @foreach ($data as $item)
 										<article class="box post excerpt">
 											<header>
-												<h2><a href="#">Karawang <strong>Koi Show 2020</strong></a></h2>
-												<span class="date">July 28 2021</span>
+												<h2><a href="{{ route('event-details', ['id' => $item]) }}"><strong>{{$item->nama_event}}</strong></a></h2>
+												<span class="date">{{$item->tanggal_event}}</span>
 											</header>
 											<!-- Carousel -->
-												<div id="demo1" class="carousel slide image featured" data-bs-ride="carousel" data-bs-interval="false">
+												<div id="{{$item->id}}" class="carousel slide image featured" data-bs-ride="carousel" data-bs-interval="false">
 
 													<!-- Indicators/dots -->
 													<div class="carousel-indicators">
@@ -119,13 +120,13 @@
 												</ol>
 											</p>
 											<ul class="actions">
-												<li><a href="#" class="button icon solid fa-file">Baca lebih lanjut...</a></li>
+												<li><a href="{{ route('event-details', ['id' => $item]) }}" class="button icon solid fa-file">Baca lebih lanjut...</a></li>
 												<li><a href="#" class="button icon solid fa-whatsapp">Whatsapp</a><li>
 											</ul>
 										</article>
-
+                                    @endforeach
 									<!-- Post -->
-										<article class="box post excerpt">
+										{{-- <article class="box post excerpt">
 											<header>
 												<h2><a href="#">5th <strong>Cianjur Koi Show</strong></a></h2>
 												<span class="date">July 28 2020</span>
@@ -176,7 +177,7 @@
 												<li><a href="#" class="button icon solid fa-file">Continue Reading</a></li>
 												<li><a href="#" class="button icon solid fa-whatsapp">Whatsapp</a><li>
 											</ul>
-										</article>
+										</article> --}}
 								</div>
 							<!-- Sidebar -->
 								<div id="sidebar" class="col-4 col-12-medium">

@@ -16,4 +16,9 @@ class Event extends Model
         'id_kota',
         'tanggal_event',
     ];
+
+    public function entry()
+    {
+        return $this->hasMany(Entry::class, 'id');
+    }
 }

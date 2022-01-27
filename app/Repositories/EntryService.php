@@ -11,4 +11,5 @@ class EntryService extends Repository
     {
         $this->model = new Entry;
     }
+
 }

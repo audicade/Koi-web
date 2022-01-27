@@ -18,15 +18,15 @@ Route::get('/login', function () {
    return redirect('login');
 });
 
-Route::get('/', function () {
-    return view('landing.index');
-})->name('index');
-Route::get('/event-details', function () {
-    return view('landing.event-details');
-})->name('event-details');
-Route::get('/events-list', function () {
-    return view('landing.events-list');
-})->name('events-list');
+// Route::get('/', function () {
+//     return view('landing.index');
+// })->name('index');
+// Route::get('/event-details', function () {
+//     return view('landing.event-details');
+// })->name('event-details');
+// Route::get('/events-list', function () {
+//     return view('landing.events-list');
+// })->name('events-list');
 
 Route::get('/lsidebar', function () {
     return view('landing.left-sidebar');
@@ -41,6 +41,12 @@ Route::get('/nosidebar', function () {
 Route::get('/blank', function () {
     return view('admin.blank');
 })->name('blank');
+
+Route::get('/', [App\Http\Controllers\LandingEventController::class, 'index'])->name('index');
+Route::get('/events-list', [App\Http\Controllers\LandingEventController::class, 'getEvent'])->name('events-list');
+Route::get('/event-details/{id}', [App\Http\Controllers\LandingEventController::class, 'showEvent'])->name('event-details');
+
+Route::get('/rekap/{id}', [App\Http\Controllers\RekapDataController::class, 'rekap'])->name('rekapitulasi');
 
 Auth::routes();
 
