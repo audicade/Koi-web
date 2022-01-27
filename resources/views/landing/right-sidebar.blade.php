@@ -135,12 +135,11 @@
 
 							<!-- Sidebar -->
 								<div id="sidebar" class="col-4 col-12-medium">
-
+d
 									<!-- Excerpts -->
 										<section>
 											<ul class="divided">
 												<li>
-
 													<!-- Excerpt -->
 														<article class="box excerpt">
 															<header>
