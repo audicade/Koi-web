@@ -3,73 +3,87 @@
 			<!-- Main -->
 				<section id="main">
 					<div class="container">
-						<div id="content">
-						<header>
+						<header style="text-align:center">
 							<h2>Events <strong>"Koi Show"</strong> List</h2>
 						</header>
-						<div class="row">
-							<div class="col-6 col-12-medium">
-								<section>
-									<form method="post" action="#">
-										<div class="row gtr-50">
-											<div class="col-6 col-12-small">
-												<input name="name" placeholder="Name" type="text" />
+						<section>
+							<header>
+								<h2><strong>Koi Show 2020</strong></h2>
+							</header>
+							<div class="row">
+								<div class="col-6 col-12-medium">
+									<article class="box post excerpt">
+										<header>
+											<h3><a href="#">Karawang <strong>Koi Show 2020</strong></a></h3>
+										</header>
+										<!-- Carousel -->
+										<div id="demo1" class="carousel slide image featured" data-bs-ride="carousel" data-bs-interval="false">
+
+											<!-- Indicators/dots -->
+											<div class="carousel-indicators">
+												<button type="button" data-bs-target="#demo1" data-bs-slide-to="0" class="active"></button>
+												<button type="button" data-bs-target="#demo1" data-bs-slide-to="1"></button>
 											</div>
-											<div class="col-6 col-12-small">
-												<input name="email" placeholder="Email" type="text" />
+
+											<!-- The slideshow/carousel -->
+											<div class="carousel-inner">
+												<div class="carousel-item active">
+													<img src="{{ asset('/') }}images/Poster/karawang.jpeg" alt="karawang 1" class="d-block w-100">
+												</div>
+												<div class="carousel-item">
+													<img src="{{ asset('/') }}images/Poster/karawang 2.jpg" alt="karawang 2" class="d-block w-100">
+												</div>
+												<a href="#"><span class="date carousel-caption">July 28 2021</span></a>
 											</div>
-											<div class="col-12">
-												<textarea name="message" placeholder="Message"></textarea>
-											</div>
-											<div class="col-12">
-												<a href="#" class="form-button-submit button icon solid fa-envelope">Send Message</a>
-											</div>
+
+											<!-- Left and right controls/icons -->
+											<button class="carousel-control-prev" type="button" data-bs-target="#demo1" data-bs-slide="prev">
+											<span class="carousel-control-prev-icon"></span>
+											</button>
+											<button class="carousel-control-next" type="button" data-bs-target="#demo1	" data-bs-slide="next">
+											<span class="carousel-control-next-icon"></span>
+											</button>
 										</div>
-									</form>
-								</section>
+									</article>
+								</div>
+								<div class="col-6 col-12-medium">
+									<article class="box post excerpt">
+										<header>
+											<h3><a href="#">Karawang <strong>Koi Show 2020</strong></a></h3>
+										</header>
+										<!-- Carousel -->
+										<div id="demo2" class="carousel slide image featured" data-bs-ride="carousel" data-bs-interval="false">
+
+											<!-- Indicators/dots -->
+											<div class="carousel-indicators">
+												<button type="button" data-bs-target="#demo2" data-bs-slide-to="0" class="active"></button>
+												<button type="button" data-bs-target="#demo2" data-bs-slide-to="1"></button>
+											</div>
+
+											<!-- The slideshow/carousel -->
+											<div class="carousel-inner">
+												<div class="carousel-item active">
+													<img src="{{ asset('/') }}images/Poster/cianjur.jpeg" alt="karawang 1" class="d-block w-100">
+												</div>
+												<div class="carousel-item">
+													<img src="{{ asset('/') }}images/Poster/cianjur 2.jpeg" alt="karawang 2" class="d-block w-100">
+												</div>
+												<a href="#"><span class="date carousel-caption">July 28 2021</span></a>
+											</div>
+
+											<!-- Left and right controls/icons -->
+											<button class="carousel-control-prev" type="button" data-bs-target="#demo2" data-bs-slide="prev">
+											<span class="carousel-control-prev-icon"></span>
+											</button>
+											<button class="carousel-control-next" type="button" data-bs-target="#demo2	" data-bs-slide="next">
+											<span class="carousel-control-next-icon"></span>
+											</button>
+										</div>
+									</article>
+								</div>
 							</div>
-							<div class="col-6 col-12-medium">
-								<section>
-									<p>Erat lorem ipsum veroeros consequat magna tempus lorem ipsum consequat Phaselamet
-									mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique. Curabitur
-									leo nibh, rutrum eu malesuada.</p>
-									<div class="row">
-										<div class="col-6 col-12-small">
-											<ul class="icons">
-												<li class="icon solid fa-home">
-													1234 Somewhere Road<br />
-													Nashville, TN 00000<br />
-													USA
-												</li>
-												<li class="icon solid fa-phone">
-													(000) 000-0000
-												</li>
-												<li class="icon solid fa-envelope">
-													<a href="#">info@untitled.tld</a>
-												</li>
-											</ul>
-										</div>
-										<div class="col-6 col-12-small">
-											<ul class="icons">
-												<li class="icon brands fa-twitter">
-													<a href="#">@untitled</a>
-												</li>
-												<li class="icon brands fa-instagram">
-													<a href="#">instagram.com/untitled</a>
-												</li>
-												<li class="icon brands fa-dribbble">
-													<a href="#">dribbble.com/untitled</a>
-												</li>
-												<li class="icon brands fa-facebook-f">
-													<a href="#">facebook.com/untitled</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</section>
-							</div>
-						</div>
-						</div>
+						</section>
+						
 					</div>
 				</section>
 @endsection
