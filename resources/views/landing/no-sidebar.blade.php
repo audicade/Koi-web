@@ -9,7 +9,7 @@
 		<title>No Sidebar - Strongly Typed by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="{{ asset('/') }}css/main.css" />
+		<link rel="stylesheet" href="{{ asset('landing') }}/css/main.css" />
 	</head>
 	<body class="no-sidebar is-preload">
 		<div id="page-wrapper">
@@ -63,7 +63,7 @@
 										<h2>Behold! This is the <strong>no sidebar</strong> layout<br />
 										with no sidebar at all!</h2>
 									</header>
-									<span class="image featured"><img src="{{ asset('/') }}images/pic04.jpg" alt="" /></span>
+									<span class="image featured"><img src="{{ asset('landing') }}/images/pic04.jpg" alt="" /></span>
 									<h3>And yeah, that's basically it</h3>
 									<p>Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit
 									ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris
@@ -211,12 +211,12 @@
 		</div>
 
 		<!-- Scripts -->
-			<script src="{{ asset('/') }}js/jquery.min.js"></script>
-			<script src="{{ asset('/') }}js/jquery.dropotron.min.js"></script>
-			<script src="{{ asset('/') }}js/browser.min.js"></script>
-			<script src="{{ asset('/') }}js/breakpoints.min.js"></script>
-			<script src="{{ asset('/') }}js/util.js"></script>
-			<script src="{{ asset('/') }}js/main.js"></script>
+			<script src="{{ asset('landing') }}/js/jquery.min.js"></script>
+			<script src="{{ asset('landing') }}/js/jquery.dropotron.min.js"></script>
+			<script src="{{ asset('landing') }}/js/browser.min.js"></script>
+			<script src="{{ asset('landing') }}/js/breakpoints.min.js"></script>
+			<script src="{{ asset('landing') }}/js/util.js"></script>
+			<script src="{{ asset('landing') }}/js/main.js"></script>
 
 	</body>
 </html>

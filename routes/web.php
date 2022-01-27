@@ -14,10 +14,25 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/login', function () {
    return redirect('login');
 });
 
+Route::get('/', function () {
+    return view('landing.index');
+})->name('index');
+Route::get('/event-details', function () {
+    return view('landing.event-details');
+})->name('event-details');
+Route::get('/lsidebar', function () {
+    return view('landing.left-sidebar');
+})->name('leftSidebar');
+Route::get('/rsidebar', function () {
+    return view('landing.right-sidebar');
+})->name('rightSidebar');
+Route::get('/nosidebar', function () {
+    return view('landing.no-sidebar');
+})->name('noSidebar');
 
 Route::get('/blank', function () {
     return view('admin.blank');

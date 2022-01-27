@@ -12,7 +12,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-		<link rel="stylesheet" href="{{ asset('/') }}css/main.css" />
+		<link rel="stylesheet" href="{{ asset('landing') }}/css/main.css" />
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
@@ -70,8 +70,8 @@
 											<a href="http://html5up.net"><h3>Rekap Data</h3></a>
 										</header>
 										<p>
-											Data entry pada setiap <strong>Koi Show</strong> event dan championship. 
-										</p>									
+											Data entry pada setiap <strong>Koi Show</strong> event dan championship.
+										</p>
 									</section>
 
 							</div>
@@ -167,7 +167,7 @@
 											</p>
 											<p>
 											Juri :
-												<ol> 
+												<ol>
 													<li>Mohammad Faisal Riftiarrasyid</li>
 													<li>Audi Pratama Putra</li>
 												</ol>
@@ -221,7 +221,7 @@
 											</p>
 											<p>
 												Juri :
-													<ol> 
+													<ol>
 														<li>Mohammad Faisal Riftiarrasyid</li>
 														<li>Audi Pratama Putra</li>
 													</ol>
@@ -391,13 +391,13 @@
 		</div>
 
 		<!-- Scripts -->
-			<script src="{{ asset('/') }}js/jquery.min.js"></script>
-			<script src="{{ asset('/') }}js/jquery.dropotron.min.js"></script>
-			<script src="{{ asset('/') }}js/browser.min.js"></script>
-			<script src="{{ asset('/') }}js/breakpoints.min.js"></script>
-			<script src="{{ asset('/') }}js/util.js"></script>
-			<script src="{{ asset('/') }}js/main.js"></script>
-			<script src="{{ asset('/') }}js/nav.js"></script>
+			<script src="{{ asset('landing') }}/js/jquery.min.js"></script>
+			<script src="{{ asset('landing') }}/js/jquery.dropotron.min.js"></script>
+			<script src="{{ asset('landing') }}/js/browser.min.js"></script>
+			<script src="{{ asset('landing') }}/js/breakpoints.min.js"></script>
+			<script src="{{ asset('landing') }}/js/util.js"></script>
+			<script src="{{ asset('landing') }}/js/main.js"></script>
+			<script src="{{ asset('landing') }}/js/nav.js"></script>
 
 	</body>
 </html>
