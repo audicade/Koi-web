@@ -1,7 +1,7 @@
 @extends('layouts.landing',['title' => 'Home'])
 @section('content')
 			<!-- Features -->
-				<section id="features">
+				{{-- <section id="features">
 					<div class="container">
 						<header>
 							<h2>Panel Informasi <strong>Koi Show</strong></h2>
@@ -56,7 +56,7 @@
 							</div>
 						</div>
 					</div>
-				</section>
+				</section> --}}
 
 			<!-- Banner -->
 				<section id="banner">
