@@ -81,7 +81,12 @@ class Repository extends RepositoryAbstract
         $model = new Event;
         return $model->orderBy($column, $method)->limit(3)->get();
     }
-
+    public function getEventsList(){
+        $column = 'tanggal_event';
+        $method = 'desc';
+        $model = new Event;
+        return $model->orderBy($column, $method)->get();
+    }
     public function getByIdEvent(int $id)
     {
         return $this->model->where('id_event',$id)->get();

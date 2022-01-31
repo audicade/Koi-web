@@ -39,26 +39,16 @@
 
 		<section id="header">
 					<div class="container">
+						<!-- Logo -->
+						<h1 id="logo"><a href="{{ route('index') }}">All in One Koi WebApp</a></h1>
+						<p>Your All in One Koi App. <strong> Information Center </strong> of All Koi Related Events.</p>
+
 						<!-- Nav -->
 							<nav id="nav" style="overflow: hidden; text-align: center; background-color: #333; padding-top:15px; position: fixed; top: 0; z-index:999; width: 100%;">
 								<ul>
 									<li><a class="icon solid fa-home" href="{{ route('index') }}"><span>Home</span></a></li>
 									<li>
 										<a href="{{ route('events-list') }}" class="icon fa-chart-bar"><span>Events</span></a>
-										<ul>
-											<li><a href="#">2021</a></li>
-											<li><a href="#">2020</a></li>
-											<li><a href="#">2019</a></li>
-											<li>
-												<a href="#">2018</a>
-												<ul>
-													<li><a href="#">Contoh Event 1</a></li>
-													<li><a href="#">Contoh Event 2</a></li>
-													<li><a href="#">Contoh Event 3</a></li>
-												</ul>
-											</li>
-											<li><a href="#">2017</a></li>
-										</ul>
 									</li>
 									<li><a class="icon solid fa-cog" href="{{ route('leftSidebar') }}"><span>About Us</span></a></li>
 									<!-- <li><a class="icon solid fa-retweet" href="{{ route('rightSidebar') }}"><span>Judge List</span></a></li> -->

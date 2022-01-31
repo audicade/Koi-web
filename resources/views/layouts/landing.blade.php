@@ -31,27 +31,19 @@
 						<!-- Nav -->
 							<nav id="nav" style="overflow: hidden; text-align: center; background-color: #333; padding-top:15px; position: fixed; top: 0; z-index:999; width: 100%;">
 								<ul>
-									<li><a class="icon solid fa-home" href="{{ route('index') }}"><span>Home</span></a></li>
 									<li>
-										<a href="{{ route('events-list') }}" class="icon fa-chart-bar"><span>Events</span></a>
-										<ul>
-											<li><a href="#">2021</a></li>
-											<li><a href="#">2020</a></li>
-											<li><a href="#">2019</a></li>
-											<li>
-												<a href="#">2018</a>
-												<ul>
-													<li><a href="#">Contoh Event 1</a></li>
-													<li><a href="#">Contoh Event 2</a></li>
-													<li><a href="#">Contoh Event 3</a></li>
-												</ul>
-											</li>
-											<li><a href="#">2017</a></li>
-										</ul>
+										<a class="icon solid fa-home" href="{{ route('index') }}"><span>Home</span></a>
 									</li>
-									<li><a class="icon solid fa-cog" href="{{ route('leftSidebar') }}"><span>About Us</span></a></li>
+									<li>
+										<a class="icon fa-chart-bar" href="{{ route('events-list') }}"><span>Events</span></a>
+									</li>
+									<li>
+										<a class="icon solid fa-cog" href="{{ route('leftSidebar') }}"><span>About Us</span></a>
+									</li>
 									<!-- <li><a class="icon solid fa-retweet" href="{{ route('rightSidebar') }}"><span>Judge List</span></a></li> -->
-									<li><a class="icon solid fa-sitemap" href="{{ route('login') }}"><span>Admin</span></a></li>
+									<li>
+										<a class="icon solid fa-sitemap" href="{{ route('login') }}"><span>Admin</span></a>
+									</li>
 								</ul>
 							</nav>
 						<!-- Nav End -->

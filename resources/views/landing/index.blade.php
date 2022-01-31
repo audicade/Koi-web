@@ -12,7 +12,7 @@
 
 			<!-- Main -->
 				<section id="main">
-					<div class="container ">
+					<div class="container">
 						<div class="row">
 							<!-- Content -->
 								<div id="content" class="col-8 col-12-medium">

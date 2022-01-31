@@ -31,7 +31,7 @@ class RekapDataController extends Controller
     {
         $data_event = $this->event->where('id',$id)->get('nama_event');
         $rekap_event = $this->entryService->getByIdEvent($id);
-        return view('rekap-data.index')
+        return view('rekap-data.rekap')
                 ->with(compact('data_event'))
                 ->with(compact('rekap_event'));
     }
