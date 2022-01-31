@@ -24,6 +24,11 @@ class EventController extends Controller
         $data = $this->eventService->all();
         return view('admin.event.index', compact('data'));
     }
+    public function sidebar()
+    {
+        $data = $this->eventService->all();
+        return view('admin.event.index', compact('data'));
+    }
 
 
     public function create()

@@ -63,4 +63,19 @@ class Repository extends RepositoryAbstract
     {
         return $this->delete($id);
     }
+
+    public function getById(int $id)
+    {
+        return $this->model->where('id',$id)->get();
+    }
+
+    public function getOrderByLimit(string $column, string $method = 'asc')
+    {
+        return $this->model->orderBy($column, $method)->limit(5)->get();
+    }
+
+    public function getByIdEvent($id)
+    {
+        return $this->model->where('id_event',$id)->get();
+    }
 }

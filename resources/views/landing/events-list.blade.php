@@ -11,13 +11,14 @@
 								<h2><strong>Koi Show 2020</strong></h2>
 							</header>
 							<div class="row">
+                                @foreach ($data as $item)
 								<div class="col-6 col-12-medium">
 									<article class="box post excerpt">
 										<header>
-											<h3><a href="#">Karawang <strong>Koi Show 2020</strong></a></h3>
+											<h3><a href="{{ route('event-details', [$item->id]) }}"><str>{{ $item->nama_event }}</str</a></h3>
 										</header>
 										<!-- Carousel -->
-										<div id="demo1" class="carousel slide image featured" data-bs-ride="carousel" data-bs-interval="false">
+										<div id="{{ $item->id }}" class="carousel slide image featured" data-bs-ride="carousel" data-bs-interval="false">
 
 											<!-- Indicators/dots -->
 											<div class="carousel-indicators">
@@ -33,7 +34,7 @@
 												<div class="carousel-item">
 													<img src="{{ asset('/') }}images/Poster/karawang 2.jpg" alt="karawang 2" class="d-block w-100">
 												</div>
-												<a href="#"><span class="date carousel-caption">July 28 2021</span></a>
+												<a href="{{ route('event-details', ['id' => $item]) }}"><span class="date carousel-caption">{{ $item->tanggal_event }}</span></a>
 											</div>
 
 											<!-- Left and right controls/icons -->
@@ -46,21 +47,22 @@
 										</div>
 									</article>
 								</div>
-								<div class="col-6 col-12-medium">
+                                @endforeach
+								<!-- <div class="col-6 col-12-medium">
 									<article class="box post excerpt">
 										<header>
 											<h3><a href="#">Karawang <strong>Koi Show 2020</strong></a></h3>
 										</header>
-										<!-- Carousel -->
+										Carousel
 										<div id="demo2" class="carousel slide image featured" data-bs-ride="carousel" data-bs-interval="false">
 
-											<!-- Indicators/dots -->
+											Indicators/dots
 											<div class="carousel-indicators">
 												<button type="button" data-bs-target="#demo2" data-bs-slide-to="0" class="active"></button>
 												<button type="button" data-bs-target="#demo2" data-bs-slide-to="1"></button>
 											</div>
 
-											<!-- The slideshow/carousel -->
+											The slideshow/carousel
 											<div class="carousel-inner">
 												<div class="carousel-item active">
 													<img src="{{ asset('/') }}images/Poster/cianjur.jpeg" alt="karawang 1" class="d-block w-100">
@@ -71,7 +73,7 @@
 												<a href="#"><span class="date carousel-caption">July 28 2021</span></a>
 											</div>
 
-											<!-- Left and right controls/icons -->
+											Left and right controls/icons
 											<button class="carousel-control-prev" type="button" data-bs-target="#demo2" data-bs-slide="prev">
 											<span class="carousel-control-prev-icon"></span>
 											</button>
@@ -80,10 +82,10 @@
 											</button>
 										</div>
 									</article>
-								</div>
+								</div> -->
 							</div>
 						</section>
-						
+
 					</div>
 				</section>
 @endsection
