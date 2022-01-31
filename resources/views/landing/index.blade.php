@@ -107,7 +107,7 @@
 												</div>
 											<h3>Deskripsi</h3>
 											<p>
-												Tanggal Main : 	11 - 13 Desember 2020 <br>
+												Tanggal Main : 	{{ $item->tanggal_event }} <br>
 												Tempat : Mall Techno Mart <br>
 
 												Pendaftaran dibuka mulai tanggal 21 September 2020 <br>

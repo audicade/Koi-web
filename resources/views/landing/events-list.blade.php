@@ -48,7 +48,7 @@
 									</article>
 								</div>
                                 @endforeach
-								<!-- <div class="col-6 col-12-medium">
+								{{-- <div class="col-6 col-12-medium">
 									<article class="box post excerpt">
 										<header>
 											<h3><a href="#">Karawang <strong>Koi Show 2020</strong></a></h3>
@@ -82,7 +82,7 @@
 											</button>
 										</div>
 									</article>
-								</div> -->
+								</div> --}}
 							</div>
 						</section>
 

@@ -16,4 +16,8 @@ class EventService extends Repository
     {
         return  $this->model->pluck('nama_event','id');
     }
+    public function getEvent($id)
+    {
+        return  $this->model->where('id',$id)->get();
+    }
 }

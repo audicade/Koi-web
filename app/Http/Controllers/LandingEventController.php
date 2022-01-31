@@ -24,17 +24,21 @@ class LandingEventController extends Controller
     public function showEvent($id)
     {
         $data = $this->eventService->getById($id);
-        return view('landing.event-details')->with(compact('data'))->with($this->sideBar());
+        return view('landing.event-details')
+                ->with(compact('data'))
+                ->with($this->sideBar());
     }
 
     public function index()
     {
         $data = $this->eventService->getOrderByLimit('tanggal_event','desc');
-        return view('landing.index')->with(compact('data'))->with($this->sideBar());
+        return view('landing.index')
+                ->with(compact('data'))
+                ->with($this->sideBar());
     }
     public function sideBar()
     {
-        $data_sidebar = $this->eventService->getOrderByLimit('tanggal_event','desc');
+        $data_sidebar = $this->eventService->getSideBarContent();
         return compact('data_sidebar');
     }
 }

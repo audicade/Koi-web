@@ -27,11 +27,13 @@ class RekapDataController extends Controller
         $this->varietasService = $varietasService;
     }
 
-    public function rekap($id)
+    public function rekap(int $id)
     {
-        $data = $this->entryService->getByIdEvent('id_event',$id);
-        $rekap = $this->event->entry();
-        return view('rekap-data.index', compact('data','rekap'));
+        $data_event = $this->event->where('id',$id)->get('nama_event');
+        $rekap_event = $this->entryService->getByIdEvent($id);
+        return view('rekap-data.index')
+                ->with(compact('data_event'))
+                ->with(compact('rekap_event'));
     }
 
 }

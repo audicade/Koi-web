@@ -8,14 +8,19 @@
                 <!-- Highlight -->
                     <article class="box highlight excerpt">
                         <header>
-                            <h3><a href="{{ route('event-details', ['id' => $item]) }}">Something of note</a></h3>
-                            <span class="date">July 24 2020</span>
+                            {{-- <h3>{{ $item }}</h3> --}}
+                            <h3><a href="{{ route('event-details', ['id' => $item]) }}">{{ $item->nama_event }}</a></h3>
+                            <span class="date">{{ $item->tanggal_event }}</span>
                         </header>
-                        <a href="#" class="image left" style="width:50%"><img src="{{ asset('/') }}images/poster/karawang.jpeg" alt="" /></a>
-                        <p>Phasellus sed laoreet massa id justo mattis pharetra. Fusce suscipit ligula vel quam
-                        viverra sit amet mollis tortor congue magna lorem ipsum dolor et quisque ut odio facilisis
-                        convallis. Etiam non nunc vel est suscipit convallis non id orci. Ut interdum tempus
-                        facilisis convallis. Etiam non nunc vel est suscipit convallis non id orci.</p>
+                        <a href="{{ route('event-details', ['id' => $item]) }}" class="image left" style="width:50%"><img src="{{ asset('/') }}images/poster/{{ $item->url_poster }}" alt="" /></a>
+                        <p>
+                            {{ $item->detail_event }}
+                            Tanggal Main : <br>	{{ $item->tanggal_event }} <br>
+                            Tempat : Mall Techno Mart <br>
+                            
+                            Pendaftaran dibuka mulai tanggal 21 September 2020 <br>
+                            
+                        </p>
                         <ul class="actions">
                             <li><a href="{{ route('event-details', ['id' => $item]) }}" class="button icon solid fa-file">Info Selanjutnya...</a></li>
                         </ul>

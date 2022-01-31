@@ -17,6 +17,22 @@
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 		<link rel="stylesheet" href="{{ asset('landing') }}/css/main.css" />
+		<style>
+			.card {
+			  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+			  transition: 0.3s;
+			  /* width: 40%; */
+			  border-radius: 5px; /* 5px rounded corners */
+			}
+			
+			.card:hover {
+			  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+			}
+			
+			.container {
+			  padding: 2px 10px;
+			}
+			</style>
 	</head>
 	<body class="right-sidebar is-preload">
 		<div id="page-wrapper">
@@ -28,7 +44,7 @@
 								<ul>
 									<li><a class="icon solid fa-home" href="{{ route('index') }}"><span>Home</span></a></li>
 									<li>
-										<a href="#" class="icon fa-chart-bar"><span>Events</span></a>
+										<a href="{{ route('events-list') }}" class="icon fa-chart-bar"><span>Events</span></a>
 										<ul>
 											<li><a href="#">2021</a></li>
 											<li><a href="#">2020</a></li>
@@ -46,7 +62,7 @@
 									</li>
 									<li><a class="icon solid fa-cog" href="{{ route('leftSidebar') }}"><span>About Us</span></a></li>
 									<!-- <li><a class="icon solid fa-retweet" href="{{ route('rightSidebar') }}"><span>Judge List</span></a></li> -->
-									<li><a class="icon solid fa-sitemap" href="{{ route('index') }}"><span>Admin</span></a></li>
+									<li><a class="icon solid fa-sitemap" href="{{ route('login') }}"><span>Admin</span></a></li>
 								</ul>
 							</nav>
 						<!-- Nav End -->

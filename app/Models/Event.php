@@ -19,6 +19,6 @@ class Event extends Model
 
     public function entry()
     {
-        return $this->hasMany(Entry::class, 'id');
+        return $this->hasMany(Entry::class,'id');
     }
 }

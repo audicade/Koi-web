@@ -33,7 +33,7 @@
 								<ul>
 									<li><a class="icon solid fa-home" href="{{ route('index') }}"><span>Home</span></a></li>
 									<li>
-										<a href="#" class="icon fa-chart-bar"><span>Events</span></a>
+										<a href="{{ route('events-list') }}" class="icon fa-chart-bar"><span>Events</span></a>
 										<ul>
 											<li><a href="#">2021</a></li>
 											<li><a href="#">2020</a></li>
@@ -51,7 +51,7 @@
 									</li>
 									<li><a class="icon solid fa-cog" href="{{ route('leftSidebar') }}"><span>About Us</span></a></li>
 									<!-- <li><a class="icon solid fa-retweet" href="{{ route('rightSidebar') }}"><span>Judge List</span></a></li> -->
-									<li><a class="icon solid fa-sitemap" href="{{ route('index') }}"><span>Admin</span></a></li>
+									<li><a class="icon solid fa-sitemap" href="{{ route('login') }}"><span>Admin</span></a></li>
 								</ul>
 							</nav>
 						<!-- Nav End -->

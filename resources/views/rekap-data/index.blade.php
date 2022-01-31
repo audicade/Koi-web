@@ -4,21 +4,20 @@
 				<section id="main">
 					<div class="container">
 						<div id="content">
-
+                            {{-- {{ $data }} --}}
+                            {{-- {{ $rekap }} --}}
 							<!-- Post -->
-								<table class="table">
+								{{-- <table class="table">
                                     <thead>
                                         <tr>
-                                        <th scope="col"></th>
-                                        <th scope="col"></th>
+                                        <th scope="col">OWNER</th>
+                                        <th scope="col">KOI</th>
+                                        <th scope="col">KOI</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                         <td>FISH ENTRY</td>
-                                        {{-- @foreach ($rekap as $item) --}}
-                                        <td>{{ $rekap }}</td>
-                                        {{-- @endforeach --}}
                                         </tr>
                                         <tr>
                                         <td>OWNER</td>
@@ -29,9 +28,10 @@
                                         <td>@twitter</td>
                                         </tr>
                                     </tbody>
-                                </table>
-
+                                </table> --}}
+                            
 						</div>
+                        @include('component.rekap_card',['data_event'=>$data_event,'rekap_event'=>$rekap_event])
 					</div>
 				</section>
 @endsection

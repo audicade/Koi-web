@@ -11,5 +11,9 @@ class EntryService extends Repository
     {
         $this->model = new Entry;
     }
-
+    public function getEntry(){
+        $column = 'tanggal_event';
+        $method = 'desc';
+        return $model->orderBy($column, $method)->limit(3)->get();
+    }
 }

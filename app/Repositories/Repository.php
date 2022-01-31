@@ -3,7 +3,9 @@
 namespace App\Repositories;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Event;
 use Illuminate\Support\Collection;
+
 
 class Repository extends RepositoryAbstract
 {
@@ -73,8 +75,14 @@ class Repository extends RepositoryAbstract
     {
         return $this->model->orderBy($column, $method)->limit(5)->get();
     }
+    public function getSideBarContent(){
+        $column = 'tanggal_event';
+        $method = 'desc';
+        $model = new Event;
+        return $model->orderBy($column, $method)->limit(3)->get();
+    }
 
-    public function getByIdEvent($id)
+    public function getByIdEvent(int $id)
     {
         return $this->model->where('id_event',$id)->get();
     }
