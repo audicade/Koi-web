@@ -83,9 +83,9 @@
 									<li>
 										<a href="{{ route('events-list') }}" class="icon fa-chart-bar"><span>Events</span></a>
 									</li>
-									<li>
+									{{-- <li>
 										<a class="icon solid fa-cog" href="{{ route('leftSidebar') }}"><span>About Us</span></a>
-									</li>
+									</li> --}}
 									<!-- <li>
 										<a class="icon solid fa-retweet" href="{{ route('rightSidebar') }}"><span>Judge List</span></a>
 									</li> -->

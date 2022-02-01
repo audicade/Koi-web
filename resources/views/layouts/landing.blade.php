@@ -38,9 +38,9 @@
 									<li>
 										<a class="icon fa-chart-bar" href="{{ route('events-list') }}"><span>Events</span></a>
 									</li>
-									<li>
+									{{-- <li>
 										<a class="icon solid fa-cog" href="{{ route('leftSidebar') }}"><span>About Us</span></a>
-									</li>
+									</li> --}}
 									<!-- <li><a class="icon solid fa-retweet" href="{{ route('rightSidebar') }}"><span>Judge List</span></a></li> -->
 									<li>
 										<a class="icon solid fa-sitemap" href="{{ route('login') }}"><span>Admin</span></a>
