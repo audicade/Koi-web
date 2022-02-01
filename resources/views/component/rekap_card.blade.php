@@ -1,7 +1,7 @@
 <!-- Cards -->
 <div class="container">
     <header style="text-align:center">
-        <h2><strong>{{ $data_event[0]->nama_event }}</strong></h2>
+        <h2><strong>Championship</strong></h2>
     </header>
     <section>
         <div class="row">
