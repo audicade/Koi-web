@@ -111,12 +111,10 @@
 								</div>
 							</section>
 							</div>
+							<ul class="links" style="text-align: center">
+								<li>&copy; koi-app team. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
 						</div>
-					</div>
-					<div id="copyright" class="container">
-						<ul class="links">
-							<li>&copy; koi-app team. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
 					</div>
 				</section>
 

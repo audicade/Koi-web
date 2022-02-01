@@ -37,7 +37,7 @@
 				padding: 6px 8px 6px 16px;
 				text-decoration: none;
 				font-size: 20px;
-				color: #000000 !important;
+				color: rgb(43, 35, 35) !important;
 				/* display: block; */
 				border: none;
 				background: rgb(238, 110, 110);
@@ -158,12 +158,10 @@
 								</div>
 							</section>
 							</div>
+							<ul class="links" style="text-align: center">
+								<li>&copy; koi-app team. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
 						</div>
-					</div>
-					<div id="copyright" class="container">
-						<ul class="links">
-							<li>&copy; koi-app team. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
 					</div>
 				</section>
 
