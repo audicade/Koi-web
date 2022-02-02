@@ -36,6 +36,7 @@ class LandingEventController extends Controller
                 ->with(compact('data'))
                 ->with($this->sideBar());
     }
+
     public function sideBar()
     {
         $data_sidebar = $this->eventService->getSideBarContent();
